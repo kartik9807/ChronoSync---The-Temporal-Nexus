@@ -28,6 +28,9 @@ app.use(session({
   }
 }));
 
+app.get('/',(req,res)=>{
+    res.send("working");
+}
 
 app.use('/api/auth',authRouter)
 app.use('/api/nexus',taskRouter)
