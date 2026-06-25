@@ -17,15 +17,18 @@ const authRouter = require(path.join(__dirname,'routes/auth.router.js'))
 const taskRouter = require(path.join(__dirname,'/routes/task.router.js'))
 
 // session
+app.set("trust proxy", 1);
+
 app.use(session({
-  secret: process.env.SESSION_SECRET, // Used to sign the session ID cookie
-  resave: false,                         // Prevents resaving session if unmodified
-  saveUninitialized: false,              // Prevents storing empty sessions
-  cookie: { 
-    maxAge: 60000 * 600,                  // Cookie expiration time in milliseconds (1 hour)
-    secure: process.env.NODE_ENV === "production",                       // Set to true if using HTTPS
-    httpOnly: true                       // Prevents client-side JS from reading the cookie
-  }
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+        maxAge: 1000 * 60 * 60,
+        secure: process.env.NODE_ENV === "production",
+        sameSite: process.env.NODE_ENV === "production" ? "none" : "lax",
+        httpOnly: true
+    }
 }));
 
 app.get('/',(req,res)=>{
