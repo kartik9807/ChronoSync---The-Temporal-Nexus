@@ -1,0 +1,85 @@
+{
+  "users": [
+    {
+      "username": "director",
+      "password": "director123",
+      "clearance": "LEVEL_5"
+    },
+    {
+      "username": "commander",
+      "password": "commander123",
+      "clearance": "LEVEL_4"
+    },
+    {
+      "username": "captain",
+      "password": "captain123",
+      "clearance": "LEVEL_3"
+    },
+    {
+      "username": "operator",
+      "password": "operator123",
+      "clearance": "LEVEL_2"
+    },
+    {
+      "username": "recruit",
+      "password": "recruit123",
+      "clearance": "LEVEL_1"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "6d5d9a73-70d5-4628-b7e6-d4b7db86e9d4",
+      "description": "Calibrate the Quantum Relay before the next synchronization cycle.",
+      "clearanceRequired": "LEVEL_5",
+      "expirationTimestamp": 1782943790000
+    },
+    {
+      "id": "bfa0939e-48d8-42fc-8b53-16dd40d0d4cf",
+      "description": "Authorize launch sequence for Orbital Defense Platform.",
+      "clearanceRequired": "LEVEL_5",
+      "expirationTimestamp": 1783543720000
+    },
+    {
+      "id": "fba2a00c-72cb-4f39-b7bb-f20c65fd91f4",
+      "description": "Inspect Cryogenic Reactor coolant levels.",
+      "clearanceRequired": "LEVEL_4",
+      "expirationTimestamp": 1782843720000
+    },
+    {
+      "id": "c758fd73-d0f0-49d2-ae3b-2bffabf981d1",
+      "description": "Deploy reconnaissance drone to Sector-9.",
+      "clearanceRequired": "LEVEL_4",
+      "expirationTimestamp": 17823943720000
+    },
+    {
+      "id": "5de46216-dc1e-4869-b73c-d52d18dc10a2",
+      "description": "Repair damaged communication uplink antenna.",
+      "clearanceRequired": "LEVEL_3",
+      "expirationTimestamp": 1782543720000
+    },
+    {
+      "id": "ac22b7d4-d8c7-49c5-9e90-c774c4f64c79",
+      "description": "Run diagnostics on Navigation Core AI.",
+      "clearanceRequired": "LEVEL_3",
+      "expirationTimestamp": 1782543720000
+    },
+    {
+      "id": "e2288fa3-bcb0-4ff4-a7d8-c38fc4d40c13",
+      "description": "Replace power cells in Maintenance Bay C.",
+      "clearanceRequired": "LEVEL_2",
+      "expirationTimestamp": 1782543720000
+    },
+    {
+      "id": "94839eb8-75d6-49d2-a8b5-7ef2b1f63c2d",
+      "description": "Scan Cargo Hold for unauthorized equipment.",
+      "clearanceRequired": "LEVEL_2",
+      "expirationTimestamp": 1782543720000
+    },
+    {
+      "id": "a2b6d6dc-21ab-48b4-8b56-6b90db1d45ef",
+      "description": "Clean Observation Deck and report anomalies.",
+      "clearanceRequired": "LEVEL_1",
+      "expirationTimestamp": 1782443720000
+    }
+  ]
+}
